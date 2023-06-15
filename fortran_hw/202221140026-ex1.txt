@@ -1,0 +1,22 @@
+program main
+implicit none
+interface 
+ function f(a,b,c,x)
+ implicit none
+ real :: f,a,b,c,x
+ end 
+end interface
+real :: cal
+cal=f(b=2.0,c=1.0,a=.0.0,x=2.0)
+print*,cal
+end
+
+  function f(a, b, c, x)
+    implicit none
+    real :: f, a, b, c, x
+    if (a == 0.0) then
+      print *, "Error: a must be non-zero."
+      stop
+    end if
+    f = a*x**2 + b*x + c
+  end function f
