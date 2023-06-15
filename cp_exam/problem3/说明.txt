@@ -1,0 +1,2 @@
+velocity verlet method 时间反演是收敛的
+欧拉法的时间反演是发散的
